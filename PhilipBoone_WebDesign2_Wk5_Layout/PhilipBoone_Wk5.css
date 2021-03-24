@@ -63,17 +63,21 @@ p {
 
 .brown {
     background-color: tan;
-    width: 50%;
+    width: auto;
     height: 300px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tan {
     background-color: brown;
-    width: 50%;
+    width: auto;
     height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .light-brown {
@@ -83,14 +87,18 @@ p {
 
 .dark-brown {
     background-color: saddlebrown;
-    width: 50%;
+    width: auto;
     height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .beige {
     background-color: chocolate;
-    width: 50%;
+    width: auto;
     height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -106,4 +114,60 @@ a {
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.yellow {
+    background-color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.black3 {
+    background-color: black;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gray {
+    background-color: gray;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.purple {
+    background-color: purple;
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gray2 {
+    background-color: silver;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .w-md-25 {
+        width: 25%;
+    }
+}
+
+@media (min-width: 768px) {
+    .w-md-50 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .w-md-33 {
+        width: 33%;
+    }
 }
