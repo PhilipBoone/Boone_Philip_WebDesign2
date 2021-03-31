@@ -1,7 +1,7 @@
 
 
 nav {
-    background-color: rgb(233, 84, 15);
+    background-color: rgb(5, 62, 185);
 }
 
 a {
@@ -15,7 +15,7 @@ a {
 }
 
 body {
-    background-color: white;
+    background-color: rgb(245, 221, 9);
 }
 
 section {
@@ -30,7 +30,7 @@ article {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 20px;
-    background-color: turquoise;
+    background-color: rgb(245, 135, 9);
 }
 
 @media (max-width: 320px) {
@@ -82,7 +82,7 @@ article {
 }
 
 article {
-    background-color: rgb(233, 84, 15);
+    background-color: rgb(5, 62, 185);
 }
 
 .article1 {
