@@ -1,13 +1,13 @@
 
 
 nav {
-    background-color: rgb(5, 62, 185);
+    background-color: rgb(183, 183, 183);
 }
 
 a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(13, 47, 49);
     padding: 20px;
     text-align: center;
     font-size: medium;
@@ -15,14 +15,13 @@ a {
 }
 
 body {
-    background-color: rgb(245, 221, 9);
+    background-color: rgb(13, 47, 49);
 }
 
 section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-bottom: 20px;
 }
 
 article {
@@ -82,12 +81,18 @@ article {
 }
 
 article {
-    background-color: rgb(5, 62, 185);
+    background-color: rgb(183, 183, 183);
 }
 
 .article1 {
     height: 200px;
     width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: -30px;
 }
 
 .article2 {
@@ -105,14 +110,41 @@ li {
     height: 150px;
 }
 
-h1 {
+.title {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     font-size: large;
 }
 
+
+
+.StoreFront {
+    height: 200px;
+    width: auto;
+}
+
 img {
-    height: 180px;
-    width: 45%;
+    height: 200px;
+    width: auto;
+}
+
+.Logo {
+    height: 50px;
+    width: auto;
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(183, 183, 183);
+    text-align: center;
+}
+
+.FoodItems {
+    padding-left: 500px;
+}
+
+.photo {
+    height: 200px;
+    width: auto;
 }
