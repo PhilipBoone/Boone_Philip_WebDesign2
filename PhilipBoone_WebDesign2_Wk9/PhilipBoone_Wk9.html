@@ -1,0 +1,76 @@
+<!--Philip Boone GR DES 66 Wk 9-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Boone, Web 2, Week 9</title>
+</head>
+<body id="MyBody">
+    <style>
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            padding: 20px;
+        }
+
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+        }
+
+        button{
+            padding: 5px;
+            background-color: silver;
+            border-radius: 15px;
+        }
+    </style>
+
+    <h1 id="Heading">Hello, Philip</h1>
+    <button href="#" id="colorChange">Change the Colors</button>
+
+    <p>Press the button below to change the background color of the page.</p>
+    <button href="#" id="bodyChange">Change the Background</button>
+
+    <p id="Text">Mouseover the button below to change the color of the text.</p>
+    <button href="#" id="paragraphChange">Change the Color of the Text</button>
+
+    <div></div>
+
+    <script>
+        console.log("This is your page talking to you")
+
+        document.getElementById("colorChange").addEventListener("click", function(){
+            document.getElementById("Heading").style.backgroundColor = "silver";
+            document.getElementById("Heading").style.color = "darkblue";
+
+            alert("The changes are now complete.");
+        })
+
+        document.getElementById("bodyChange").addEventListener("click", function(){
+
+            let userAnswer = confirm("Are you sure you want to change the background?");
+
+            if(userAnswer == true){
+                document.getElementById("MyBody").style.backgroundColor = "darkblue";
+
+                alert("The changes are now complete")
+            }
+
+            else{
+                alert("No changes have been made.");
+            }
+        })
+
+        document.getElementById("paragraphChange").addEventListener("mouseover", function(){
+            document.getElementById("Text").style.color = "silver";
+        })
+        
+    </script>
+
+
+
+</body>
+</html>
