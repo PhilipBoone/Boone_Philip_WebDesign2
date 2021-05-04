@@ -31,7 +31,7 @@
     <h1 id="Heading">Hello, Philip</h1>
     <button href="#" id="colorChange">Change the Colors</button>
 
-    <p>Press the button below to change the background color of the page.</p>
+    <p id="Text1">Press the button below to change the background color of the page.</p>
     <button href="#" id="bodyChange">Change the Background</button>
 
     <p id="Text">Mouseover the button below to change the color of the text.</p>
@@ -41,10 +41,10 @@
 
     <script>
         console.log("This is your page talking to you")
-
+        let heading =  document.getElementById("Heading");
         document.getElementById("colorChange").addEventListener("click", function(){
-            document.getElementById("Heading").style.backgroundColor = "silver";
-            document.getElementById("Heading").style.color = "darkblue";
+            heading.style.backgroundColor = "silver";
+            heading.style.color = "darkblue";
 
             alert("The changes are now complete.");
         })
@@ -66,6 +66,7 @@
 
         document.getElementById("paragraphChange").addEventListener("mouseover", function(){
             document.getElementById("Text").style.color = "silver";
+            document.getElementById("Text1").style.color = "silver";
         })
         
     </script>
