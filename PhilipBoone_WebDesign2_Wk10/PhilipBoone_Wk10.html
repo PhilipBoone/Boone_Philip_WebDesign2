@@ -8,6 +8,15 @@
     <title>Philip Boone, Web 2 Wk 10</title>
 
     <style>
+
+        body {
+            background-color: cornflowerblue;
+        }
+
+        h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
         #toggleAssist, .nav-links {
             display: none;
         }
@@ -16,8 +25,29 @@
             display: block;
         }
 
-        .menu {
+        #toggleAssist2, #toggleAssist3, #toggleAssist4, #toggleAssist5, .image1, .image2, .image3, .image4 {
+            display: none;
+        }
+
+        .thumbnail:checked + ul.nav-links {
+            display: block;
+        }
+
+        #toggleAssist3:checked + img.image2 {
+            display: block;
+        }
+
+        #toggleAssist4:checked + img.image3 {
+            display: block;
+        }
+
+        #toggleAssist5:checked + img.image4 {
+            display: block;
+        }
+
+        #menuImg {
             height: 50px;
+            width: 50px;
         }
 
         .nav-links {
@@ -37,7 +67,6 @@
         }
 
         li {
-            text-decoration: none;
             color: black;
         }
 
@@ -47,15 +76,16 @@
             padding: 50px;
         }
 
-    
-
+        #menuImg2 {
+            height: 50px;
+        }
 
     </style>
 </head>
 <body>
     <nav>
         <label for="toggleAssist">
-            <img class="menuImg" src="http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" alt="MenueIcon">
+            <img id="menuImg" src="http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" alt="MenuIcon">
         </label>
 
         <input type="checkbox" id="toggleAssist">
@@ -66,28 +96,58 @@
             <li><a href="">Contact</a></li>
         </ul>
 
-        <div></div>
-
-        <div>
-            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_2462f9f306664e2fbdfc44085e68494c~mv2.jpg/v1/fill/w_271,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_2462f9f306664e2fbdfc44085e68494c~mv2.webp" alt="Image 1">
-            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_85dc58de6de7450e872d749e01a9f0db~mv2.jpg/v1/fill/w_553,h_368,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_85dc58de6de7450e872d749e01a9f0db~mv2.webp" alt="Image 2">
-            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_7fef63f78c94d9582029c91c0d323280.jpg/v1/fill/w_265,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_7fef63f78c94d9582029c91c0d323280.webp" alt="Image 3">
-            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_076e3eb22355e98a96078dc5c624e90d.jpg/v1/fill/w_465,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_076e3eb22355e98a96078dc5c624e90d.webp" alt="Image 4">
-        </div>
-        
-        <script>
-            let toggleTheImage = function(){
-                menuImg.src = "http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png";
-                tgglBTN.innerText = "Now show the first one"
-
-                if(menuImg.src === "http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png") {
-                    console.log("show the second image")
-                }
-                else {
-                    console.log("show the first image")
-                }
-            }
-        </script>
+        <img id="menuImg2" src="https://www.pngjoy.com/pngm/853/10060962_delete-button-image-x-icon-transparent-background-transparent.png" alt="MenuIcon2">
     </nav>
+
+    <div>
+        <h1>Hong Chun Zhang</h1>
+    </div>
+
+    <div>
+        <img id="thumbnail1" class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_2462f9f306664e2fbdfc44085e68494c~mv2.jpg/v1/fill/w_271,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_2462f9f306664e2fbdfc44085e68494c~mv2.webp" alt="Image 1">
+        <button class="btn">button</button>
+
+        <label for="toggleAssist3">
+            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_85dc58de6de7450e872d749e01a9f0db~mv2.jpg/v1/fill/w_553,h_368,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_85dc58de6de7450e872d749e01a9f0db~mv2.webp" alt="Image 2">
+        </label>
+        <label for="toggleAssist4">
+            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_7fef63f78c94d9582029c91c0d323280.jpg/v1/fill/w_265,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_7fef63f78c94d9582029c91c0d323280.webp" alt="Image 3">
+        </label>
+        <label for="toggleAssist5">
+            <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_076e3eb22355e98a96078dc5c624e90d.jpg/v1/fill/w_465,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_076e3eb22355e98a96078dc5c624e90d.webp" alt="Image 4">
+        </label>
+
+        <input type="checkbox" id="toggleAssist2">
+        <input type="checkbox" id="toggleAssist3">
+        <input type="checkbox" id="toggleAssist4">
+        <input type="checkbox" id="toggleAssist5">
+    </div>
+
+    <img class="image1" src="https://static.wixstatic.com/media/f4a94f_2462f9f306664e2fbdfc44085e68494c~mv2.jpg/v1/fill/w_271,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_2462f9f306664e2fbdfc44085e68494c~mv2.webp" alt="Image-1">
+
+    <img class="image2" src="https://static.wixstatic.com/media/f4a94f_85dc58de6de7450e872d749e01a9f0db~mv2.jpg/v1/fill/w_553,h_368,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_85dc58de6de7450e872d749e01a9f0db~mv2.webp" alt="Image-2">
+
+    <img class="image3" src="https://static.wixstatic.com/media/f4a94f_7fef63f78c94d9582029c91c0d323280.jpg/v1/fill/w_265,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_7fef63f78c94d9582029c91c0d323280.webp" alt="Image-3">
+
+    <img class="image4" src="https://static.wixstatic.com/media/f4a94f_076e3eb22355e98a96078dc5c624e90d.jpg/v1/fill/w_465,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_076e3eb22355e98a96078dc5c624e90d.webp" alt="Image-4">
+
+    <script>
+        let toggleTheImage = function(){
+            menuImg.src = "https://www.pngjoy.com/pngm/853/10060962_delete-button-image-x-icon-transparent-background-transparent.png";
+            tgglBTN.innerText = "Now show the first one"
+
+            if(menuImg.src === "http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png") {
+                console.log("show the second image")
+            }
+            else {
+                console.log("show the first image")
+            }
+        }
+
+        function button() {
+            var element = document.getElementById("menuImg");
+            element.classList.toggle("menuImg2")
+        }
+    </script>
 </body>
 </html>
