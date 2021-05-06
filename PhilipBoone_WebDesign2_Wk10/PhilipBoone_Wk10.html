@@ -55,7 +55,7 @@
 <body>
     <nav>
         <label for="toggleAssist">
-            <img class="menu" src="http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" alt="MenueIcon">
+            <img class="menuImg" src="http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" alt="MenueIcon">
         </label>
 
         <input type="checkbox" id="toggleAssist">
@@ -74,6 +74,20 @@
             <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_7fef63f78c94d9582029c91c0d323280.jpg/v1/fill/w_265,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_7fef63f78c94d9582029c91c0d323280.webp" alt="Image 3">
             <img class="thumbnail" src="https://static.wixstatic.com/media/f4a94f_076e3eb22355e98a96078dc5c624e90d.jpg/v1/fill/w_465,h_407,al_c,q_80,usm_0.66_1.00_0.01/f4a94f_076e3eb22355e98a96078dc5c624e90d.webp" alt="Image 4">
         </div>
+        
+        <script>
+            let toggleTheImage = function(){
+                menuImg.src = "http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png";
+                tgglBTN.innerText = "Now show the first one"
+
+                if(menuImg.src === "http://assets.stickpng.com/images/588a6507d06f6719692a2d15.png") {
+                    console.log("show the second image")
+                }
+                else {
+                    console.log("show the first image")
+                }
+            }
+        </script>
     </nav>
 </body>
 </html>
