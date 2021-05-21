@@ -15,15 +15,31 @@
     </style>
 </head>
 <body>
-    <img src="https://medicitv-c.imgix.net/artist/gabriel-faure_ZZ4XmZu.jpg?auto=format&q=85" alt="Verdi">
-    <img src="https://cdn.britannica.com/s:250x250,c:crop/01/8501-050-A1863E8C/Johannes-Brahms.jpg" alt="Brahms">
-    <img src="http://en.tchaikovsky-research.net/images/thumb/5/5c/Photo116.jpg/300px-Photo116.jpg" alt="Tchaikovsky">
-    <img src="https://cdn.britannica.com/s:290x800/25/67725-004-0811C983/Antonin-Dvorak.jpg" alt="Dvorak">
+    <img class="Faure" src="https://medicitv-c.imgix.net/artist/gabriel-faure_ZZ4XmZu.jpg?auto=format&q=85" alt="Faure">
+    <img class="Brahms" src="https://cdn.britannica.com/s:250x250,c:crop/01/8501-050-A1863E8C/Johannes-Brahms.jpg" alt="Brahms">
+    <img class="Tchaikovsky" src="http://en.tchaikovsky-research.net/images/thumb/5/5c/Photo116.jpg/300px-Photo116.jpg" alt="Tchaikovsky">
+    <img class="Dvorak" src="https://cdn.britannica.com/s:290x800/25/67725-004-0811C983/Antonin-Dvorak.jpg" alt="Dvorak">
 
     <button id="Hide1">Hide Image 1</button>
     <button id="Hide2">Hide Image 2</button>
     <button id="Hide3">Hide Image 3</button>
     <button id="Hide4">Hide Image 4</button>
+
+    $("#Hide1").click(function(){
+        $(."Faure").remove();
+    })
+
+    $("#Hide2").click(function(){
+        $(."Brahms").remove();
+    })
+
+    $("#Hide3").click(function(){
+        $(."Tchaikovsky").remove();
+    })
+
+    $("#Hide4").click(function(){
+        $(."Dvorak").remove();
+    })
 
     <script></script>
 </body>
