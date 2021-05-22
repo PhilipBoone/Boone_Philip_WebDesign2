@@ -12,35 +12,76 @@
         img {
             height: 200px;
         }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        body {
+            background-color: silver;
+        }
     </style>
 </head>
 <body>
-    <img class="Faure" src="https://medicitv-c.imgix.net/artist/gabriel-faure_ZZ4XmZu.jpg?auto=format&q=85" alt="Faure">
-    <img class="Brahms" src="https://cdn.britannica.com/s:250x250,c:crop/01/8501-050-A1863E8C/Johannes-Brahms.jpg" alt="Brahms">
-    <img class="Tchaikovsky" src="http://en.tchaikovsky-research.net/images/thumb/5/5c/Photo116.jpg/300px-Photo116.jpg" alt="Tchaikovsky">
-    <img class="Dvorak" src="https://cdn.britannica.com/s:290x800/25/67725-004-0811C983/Antonin-Dvorak.jpg" alt="Dvorak">
+    <div class="flex-container">
+        <div class="img-container1">
+            <img class="Faure" src="https://medicitv-c.imgix.net/artist/gabriel-faure_ZZ4XmZu.jpg?auto=format&q=85" alt="Faure">
+        </div>
+        <div class="img-container2">
+            <img class="Brahms" src="https://cdn.britannica.com/s:250x250,c:crop/01/8501-050-A1863E8C/Johannes-Brahms.jpg" alt="Brahms">
+        </div>
+        <div class="img-container3">
+            <img class="Tchaikovsky" src="http://en.tchaikovsky-research.net/images/thumb/5/5c/Photo116.jpg/300px-Photo116.jpg" alt="Tchaikovsky">
+        </div>
+        <div class="img-container4">
+            <img class="Dvorak" src="https://cdn.britannica.com/s:290x800/25/67725-004-0811C983/Antonin-Dvorak.jpg" alt="Dvorak">
+        </div>
+    </div>
 
-    <button id="Hide1">Hide Image 1</button>
-    <button id="Hide2">Hide Image 2</button>
-    <button id="Hide3">Hide Image 3</button>
-    <button id="Hide4">Hide Image 4</button>
+    <button id="hideImg1">Hide Image 1</button>
+    <button id="showImg1">Show Image 1</button>
+    <button id="hideImg2">Hide Image 2</button>
+    <button id="showImg2">Show Image 2</button>
+    <button id="hideImg3">Hide Image 3</button>
+    <button id="showImg3">Show Image 3</button>
+    <button id="hideImg4">Hide Image 4</button>
+    <button id="showImg4">Show Image 4</button>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#hideImg1").click(function(){
+            $(".img-container1 img").hide();
+        })
 
-    $("#Hide1").click(function(){
-        $(."Faure").remove();
-    })
+        $("#showImg1").click(function(){
+            $(".img-container1 img").show();
+        })
 
-    $("#Hide2").click(function(){
-        $(."Brahms").remove();
-    })
+        $("#hideImg2").click(function(){
+            $(".img-container2 img").hide();
+        })
 
-    $("#Hide3").click(function(){
-        $(."Tchaikovsky").remove();
-    })
+        $("#showImg2").click(function(){
+            $(".img-container2 img").show();
+        })
 
-    $("#Hide4").click(function(){
-        $(."Dvorak").remove();
-    })
+        $("#hideImg3").click(function(){
+            $(".img-container3 img").hide();
+        })
 
-    <script></script>
+        $("#showImg3").click(function(){
+            $(".img-container3 img").show();
+        })
+
+        $("#hideImg4").click(function(){
+            $(".img-container4 img").hide();
+        })
+
+        $("#showImg4").click(function(){
+            $(".img-container4 img").show();
+        })
+    </script>
 </body>
 </html>
