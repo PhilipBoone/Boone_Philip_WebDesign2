@@ -1,0 +1,59 @@
+<!--Philip Boone Web 2, Wk 13-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip Boone Web 2, Wk 13</title>
+
+    <style>
+        .accordian {
+            padding: 30px;
+            width: 500px;
+            background-color: silver;
+            font-size: 30px;
+        }
+
+        .panel {
+            display: none;
+            background-color: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Genres of Opera</h1>
+    <button class="accordian">Grand Opera</button>
+        <div class="panel">
+            <p>Grand Opera is a French style of opera</p>
+        </div>
+    <button class="accordian">Singspiel</button>
+        <div class="panel">
+            <p>Singspiel is a German style of comic opera</p>
+        </div>
+    <button class="accordian">Opera Comique</button>
+        <div class="panel">
+            <p>Opera Comique is French style of opera</p>
+        </div>
+    
+    <script>
+        var acc = document.getElementsByClassName("accordian");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
