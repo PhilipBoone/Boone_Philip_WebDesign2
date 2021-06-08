@@ -5,13 +5,15 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 8vw;
 }
 
 a {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
+    color: blue;
+    font-size: 15px;
 }
 
 ul {
@@ -23,11 +25,64 @@ ul {
     padding-left: 60px;
 }
 
-#Logo {
-    height: 380px;
-    padding-left: 100px;
+.flex-container {
+    display: flex;
+    flex-direction: row;
 }
 
 #mini {
     height: 50px;
 }
+
+#Gallery {
+    height: 200px;
+}
+
+.accordion {
+    background-color: silver;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.panel {
+    overflow: hidden;
+}
+
+.accordion:hover {
+    color: goldenrod;
+}
+
+.Link {
+    font-size: 5vw;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+
+#Cover {
+    padding-left: 0px;
+    width: 100%;
+    height: auto;
+}
+

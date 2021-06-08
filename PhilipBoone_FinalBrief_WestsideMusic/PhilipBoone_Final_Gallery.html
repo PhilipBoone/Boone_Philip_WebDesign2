@@ -12,16 +12,56 @@
 </head>
 <body>
     <ul>
+        <img id="mini" src="http://www.westsidemusicfoundation.org/_Media/symbol_200_pixels_med.jpeg" alt="Logo">
         <a href="PhilipBoone_FinalBrief.html">Home</a>
         <a href="PhilipBoone_Final_About.html">About</a>
-        <a href="PhilipBoone_Final_Gallery.html">Gallery</a>
+        <a href="PhilipBoone_Final_Gallery.html">Blog</a>
         <a href="PhilipBoone_Final_Donate.html">Donate</a>
     </ul>
 
-    <h1>Gallery</h1>
+    <h1>Blog</h1>
+    <button class="accordion" onclick="myFunction1()">Review 6/6/21</button>
+    <div id="panel1">
+        <p>"I appreciate WMF's promotion of musical culture. Their pursuit of excellence in music education is execptional."</p>
+    </div>
 
-    <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t31.18172-8/s960x960/27355838_1705168046170565_5048467853308059850_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=340051&_nc_ohc=wB1DKHYRFmgAX8UvfSe&_nc_ht=scontent-lax3-1.xx&tp=7&oh=32336a74e74f44eaea2e790d2de4e343&oe=60E06551" alt="Group">
-    <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/37410834_1856362617735038_3985932042431889408_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=340051&_nc_ohc=VASjrJk3eVoAX--XZHj&_nc_ht=scontent-lax3-2.xx&tp=6&oh=ee3a868d2c65db02dc9c7ac66a04f8d0&oe=60DD6E6E" alt="Ensemble">
-    <script></script>
+    <button class="accordion" onclick="myFunction2()">Review 6/7/21</button>
+    <div id="panel2">
+        <p>"WMF's free musical concerts and activites are high-quality and beneficial for the public. I've enjoyed the professional artists and leading educators featured in WMF's events."</p>
+    </div>
+
+    <button class="accordion" onclick="myFunction3()">Review 6/8/21</button>
+    <div id="panel3">
+        <p>"My kids have benefitted from WMF's music education opportunities. WMF has provide our family with quality music instruction."</p>
+    </div>
+    
+    <script>
+        function myFunction1() {
+            var x = document.getElementById("panel1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }   else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction2() {
+            var x = document.getElementById("panel2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }   else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction3() {
+            var x = document.getElementById("panel3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }   else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

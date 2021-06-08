@@ -12,9 +12,10 @@
 </head>
 <body>
     <ul>
+        <img id="mini" src="http://www.westsidemusicfoundation.org/_Media/symbol_200_pixels_med.jpeg" alt="Logo">
         <a href="PhilipBoone_FinalBrief.html">Home</a>
         <a href="PhilipBoone_Final_About.html">About</a>
-        <a href="PhilipBoone_Final_Gallery.html">Gallery</a>
+        <a href="PhilipBoone_Final_Gallery.html">Blog</a>
         <a href="PhilipBoone_Final_Donate.html">Donate</a>
     </ul>
 
@@ -26,7 +27,23 @@
         
     Our goal is to provide high-quality musical education opportunities, particularly to youth who otherwise do not have access to top-caliber teachers and musicians as mentors due to financial means or lack of exposure due to socio-economic background. </p>
 
-    <script></script>
+    <button onclick="myFunction()" class="accordion">Image Gallery</button>
+    <div id="panel">
+        <img id="Gallery" src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/p720x720/37410834_1856362617735038_3985932042431889408_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=340051&_nc_ohc=VASjrJk3eVoAX--XZHj&_nc_ht=scontent-lax3-2.xx&tp=6&oh=ee3a868d2c65db02dc9c7ac66a04f8d0&oe=60DD6E6E" alt="Ensemble">
+        <img id="Gallery" src="https://scontent-lax3-2.xx.fbcdn.net/v/t31.18172-8/456615_10151347522230111_371703167_o.jpg?_nc_cat=101&ccb=1-3&_nc_sid=9267fe&_nc_ohc=ZrJ8xsyLytcAX8SEQ9u&_nc_ht=scontent-lax3-2.xx&oh=54f97c6d491dd1dd00b7f45ee2a9bb6d&oe=60E3450F" alt="Pianist">
+        <img id="Gallery" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.18169-9/20763_10150100640645111_3863034_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=9267fe&_nc_ohc=GEIk5hN8y6EAX8DTR_F&_nc_ht=scontent-lax3-1.xx&oh=7d7db94755d9a15fa0494a3d1c76916b&oe=60E4F10C" alt="Recital">
+        <img id="Gallery" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.6435-9/58380699_10161644432445111_8251463603975094272_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=e3f864&_nc_ohc=HIezEhIDJLUAX82iE74&_nc_ht=scontent-lax3-1.xx&oh=6bffe852b26d9fba52436cc42ceb69a9&oe=60E280DD" alt="Concert">
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("panel");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            }   else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 
 
 </body>
